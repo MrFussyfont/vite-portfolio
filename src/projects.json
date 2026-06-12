@@ -1,0 +1,118 @@
+[
+  {
+    "key": "bh",
+    "name": "Restaurant Website Redesign",
+    "client": "Boathouse DTK",
+    "role": "UX Design & Front-End Development",
+    "stack": "Figma, React, Tailwind, Storyblok",
+    "timeline": "Q4 2025",
+    "alt": "screenshot of Boathouse website design",
+    "slides": [
+      {
+        "title": "Overview",
+        "text": "The legendary Boathouse restaurant needed a new site, but the requirements were challenging. Staff needed an easy way to add new promotions, update the event calendar, and update the menu. In addition, with no parking at the restaurant, a custom transit and parking map was needed."
+      },
+      {
+        "title": "Previous Site",
+        "text": "The previous website did not reflect the vibrancy of the brand, nor the high activity level with live music and other events. There was no event calendar – only a few promotion slides. Parking information was inadequate, with no map or transit info. All updates required a developer, causing delays."
+      },
+      {
+        "title": "Wireframes & Schema",
+        "text": "After meeting with stakeholders and reviewing requirements, I created some wireframes to test different layout ideas. We validated these with the client before showing them high-fidelity mock-ups. These frames also helped us define the schema for the Storyblok CMS — the blocks of content that would be editable."
+      },
+      {
+        "title": "Branding Challenges",
+        "text": "The Boathouse branding could best be described as ‘busy’! I tested all the colour combinations for contrast (both mathematical and perceived) to select the best for different UI elements such as buttons, titles and links. I created a palette of different tints and shades while boosting vibrance. To improve legibility, I selected DM Sans for body copy, and kept brand fonts only for selected titles."
+      },
+      {
+        "title": "Custom Map",
+        "text": "The client wanted a stripped-down map showing only essential info for transit and parking. I exported OpenStreetMap data, converted it to SVG, then painstakingly removed unnecessary layers, fixed and added labels, recoloured elements to match the brand, added custom icons and marked free and paid parking lots. I added a detailed legend with recommended parking spots and walking times to the restaurant.",
+        "link": "https://www.boathousedtk.com/getting-here",
+        "linkText": "See the parking page"
+      },
+      {
+        "title": "Menu Complexity",
+        "text": "I wanted to keep the look and feel of the printed menu, but make it easier to read and navigate on the web, including mobile devices. DM Sans has a larger x-height than the printed menu font, making it more legible, especially at small sizes. I had to reorganize and standardize parts of the menu so they would work with the CMS. For mobile, the categories scroll horizontally, following the convention of apps such as Skip the Dishes.",
+        "link": "https://www.boathousedtk.com/menu",
+        "linkText": "See the menu page"
+      },
+      {
+        "title": "Event Calendar",
+        "text": "Events needed a compact version for the calendar on the home page, and a detailed view on the Events page. Events could be recurring, ticketed or cancelled. The calendar also needed to show food and drink deals, special events and closures. It was a challenge to keep the calendar from becoming cluttered. I used icons and colour for different categories and was careful to ensure the small text was reasonably legible. ",
+        "link": "https://www.boathousedtk.com/events",
+        "linkText": "See the events page"
+      }
+    ]
+  },
+  {
+    "key": "rt",
+    "name": "Mobile App for WiFi Installers",
+    "client": "RouteThis",
+    "role": "UX Design, Usability Testing, Internationalization",
+    "stack": "Figma, iOS, Android",
+    "timeline": "2021–2022",
+    "alt": "screenshots of mobile app design",
+    "slides": [
+      {
+        "title": "Overview",
+        "text": "RouteThis hired us to help design and develop “Certify,” a mobile app that ISP field technicians use to optimize WiFi equipment placement. Techs needed a standardized tool; the business needed a guided, on-site, data-capturing workflow. I was the sole product designer over a 12-month period, taking a complex tool from concept to near-launch."
+      },
+      {
+        "title": "Challenges",
+        "text": "Designing for technicians in the field meant the app had to be very user-friendly and efficient, as they often work in high-pressure situations. The product owner had sketched out a rough workflow, but the concept was untested: an app that maps your steps while measuring WiFi signal as you walk from room to room. While the devs worked on a proof-of-concept, I iterated on the PM's wireframes in Miro, asking questions and doing more research, before moving on to high-fidelity mockups in Figma."
+      },
+      {
+        "title": "Steps",
+        "text": "The first version had these main steps: 1. Technician sign in 2. Select new or existing installation 3. Location details 4. Place router 5. Place mesh pods on each floor as needed based on signal strength 6. Take photos of router and pods 7. Test speed at router 8. Walk to each room and test speed 9. Certify (customer receives report)"
+      },
+      {
+        "title": "Prototypes",
+        "text": "The app went through many changes as we tested each step. For example, we added the ability to edit pod locations, and changed “Speed Test” to “Wireless Performance.” Here are a few examples of the prototypes I made in Figma to demonstrate how interactions and flows should work.",
+        "gifs": ["rt-signal", "rt-edit-pods", "rt-performance"]
+      },
+      {
+        "title": "WiFi Mapping",
+        "text": "The original version generated a signal heat map as the user walked, but this was unnecessary and added clutter. I replaced the green blobs with dashed lines. Then, to increase efficiency, we had the user select the room type *while* performance was being measured instead of after. In the second version, I used icons instead of labels to indicate the room type."
+      },
+      {
+        "title": "Apartment Units",
+        "text": "The biggest design challenge came in phase two of the project. The app relied on map data and the device compass to orient and locate the user inside the building. But what if the installation was in an apartment that didn't match the building footprint? I designed four versions of this feature and tested prototypes with people unfamiliar with the project. They were confused and unable to select the correct shape and orientation in early designs due to inadequate visual information. The second prototype here makes it easier to position the unit within the building.",
+        "gifs": ["rt-mdu1", "rt-mdu2"],
+        "bgColor": "bg-[#7D8B87]"
+      },
+      {
+        "title": "Localization",
+        "text": "Preparing the app for international markets presented new challenges. It had to work in 13 languages or dialects, and support configurable terminology and abbreviations, and allow variables in the middle of strings. I worked with translators and developers to ensure consistency, constantly tested on iOS and Android, and adjusted the design as needed to accommodate longer strings required by most European languages. Finnish and Greek were especially tricky!"
+      },
+      {
+        "title": "Administration & Results",
+        "text": "The system required an admin interface to set up ISPs as tenants, and to analyze data from technicians to track quality of installations over time. I designed and contributed code to the initial version of this UI. <p>Certify remains a core product for RouteThis, credited by clients with providing an “efficient installation experience” for their techs, allowing better customer service and reducing service calls.",
+        "link": "https://www.routethis.com/isps/certify",
+        "linkText": "Certify product page"
+      }
+    ]
+  },
+  {
+    "key": "mu",
+    "name": "AI-Powered Tenure App",
+    "client": "McMaster University",
+    "role": "UX Design, Front-End Dev, Prompt Engineering",
+    "stack": "Figma, React, TypeScript, ChatGPT",
+    "timeline": "Q3 2025",
+    "alt": "screenshot of web app design",
+    "slides": [
+      {
+        "title": "Overview",
+        "text": "McMaster University needed a new app to help faculty through the tenure process. I designed a user-friendly interface that guides users through each step of the application."
+      },
+      {
+        "title": "Challenges",
+        "text": "The main challenge was creating an app that could handle the complexity of the tenure process while remaining easy to use. Additionally, ensuring data privacy and security was paramount."
+      },
+      {
+        "title": "Outcome",
+        "text": "The app was well-received by faculty and administrators, streamlining the tenure process and improving user satisfaction."
+      }
+    ]
+  }
+]
