@@ -7,7 +7,7 @@ function getAssetUrl(filename: string) {
 }
 
 function processText(text: string): React.ReactElement {
-  // handles markdown-style italics and numbered lists in a (very) limited way
+  // handles some markdown-style stuff in a (very) limited way
 
   const textWithItalics = text.split("*"); // /\*([^\*])\*/,
   if (textWithItalics.length > 1) {
