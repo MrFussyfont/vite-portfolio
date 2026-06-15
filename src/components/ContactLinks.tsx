@@ -4,7 +4,7 @@ export default function ContactLinks() {
       <a
         href="https://www.linkedin.com/in/wesreimer"
         className="transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-120"
-        title="Wes on LinkedIn"
+        title="Find me on LinkedIn"
         target="_blank"
         rel="noreferrer"
       >
@@ -24,7 +24,7 @@ export default function ContactLinks() {
       <a
         href="mailto:portfolio@reimer-reason.ca"
         className="transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-120"
-        title="Send Wes an email"
+        title="Send me an email"
       >
         <svg
           width="24"
@@ -43,7 +43,7 @@ export default function ContactLinks() {
       <a
         href="tel:+15194966350"
         className="transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-120"
-        title="Call or text Wes"
+        title="Call or text me"
       >
         <svg
           width="25"
