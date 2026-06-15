@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import ContactLinks from "./components/ContactLinks";
 import ProjectCard from "./components/ProjectCard";
 import projects from "./projects.json";
 
@@ -16,7 +17,7 @@ function App() {
               ux • design systems • front-end // kitchener-waterloo, on
             </p>
           </div>
-          <div className="lg:max-w-1/3 font-lora">
+          <div className="lg:max-w-6/16 font-lora">
             <blockquote className="italic text-lg">
               What sets Wes apart is how completely he owns his work: he is
               thoughtful and detail-oriented, consistently raising the quality
@@ -44,6 +45,18 @@ function App() {
           ))}
         </div>
       </main>
+      <footer className="flex flex-col items-center gap-8 p-8 container m-auto">
+        <p className="font-extralight">More projects coming soon!</p>
+        <a
+          href="https://wes.reimer-reason.ca"
+          target="_blank"
+          rel="noreferrer"
+          className="underline underline-offset-2 hover:bg-white hover:text-yellow-900 transition-colors"
+        >
+          See some of my previous design work and case studies
+        </a>
+        <ContactLinks />
+      </footer>
     </>
   );
 }
