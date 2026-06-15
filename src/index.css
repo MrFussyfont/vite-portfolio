@@ -4,7 +4,8 @@ body {
   font-family: "Geologica", "Montserrat", sans-serif;
   color: #fff;
   background: #866f68 url(assets/bg.webp) no-repeat fixed center / cover;
-  padding: 1.5rem 3rem;
+  background-blend-mode: overlay;
+  padding: 1.5rem 3rem 3rem;
   font-weight: 400;
 }
 
