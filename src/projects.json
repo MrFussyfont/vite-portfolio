@@ -97,21 +97,41 @@
     "name": "AI-Powered Tenure App",
     "client": "McMaster University",
     "role": "UX Design, Front-End Dev, Prompt Engineering",
-    "stack": "Figma, React, TypeScript, ChatGPT",
+    "stack": "Figma, React, TypeScript, OpenAI API",
     "timeline": "Q3 2025",
     "alt": "screenshot of web app design",
     "slides": [
       {
         "title": "Overview",
-        "text": "McMaster University needed a new app to help faculty through the tenure process. I designed a user-friendly interface that guides users through each step of the application."
+        "text": "McMaster’s Department of Medicine had a laborious process for faculty who wanted to apply for promotion or tenure. The process took over 30 hours, plus effort on the part of the review board and others. It was mainly a lot of summarizing of previously written documentation. The goal of this project was to streamline the process and reduce that time from 30 to less than 2 hours, and leverage LLMs to do it."
       },
       {
-        "title": "Challenges",
-        "text": "The main challenge was creating an app that could handle the complexity of the tenure process while remaining easy to use. Additionally, ensuring data privacy and security was paramount."
+        "title": "Web App",
+        "text": "We built a web app that takes candidates through 8 steps to gather the information needed to generate the required documents. The information requested depends on the faculty type. Progress is saved automatically so that users can leave and return to the process as needed. <p>I worked on a small team with a product manager and one other developer. We chose the Shadcn library as a basis for the UI to avoid inventing a design system from scratch. I customized it in Figma based on McMaster's branding."
       },
       {
-        "title": "Outcome",
-        "text": "The app was well-received by faculty and administrators, streamlining the tenure process and improving user satisfaction."
+        "title": "Steps",
+        "text": "I haven't included every step of the application, just some of the inital mock-ups. I enjoy creating clean and effective tables and forms — bad form UX is a pet peeve!"
+      },
+      {
+        "title": "Career Highlights",
+        "text": "It was essential for the applicant to specify highlights of their career so that the AI would know what to emphasize in the generated Personal Statement. I made each section collapsible to avoid visual clutter"
+      },
+      {
+        "title": "Error Correction",
+        "text": "The first version required users to complete each step before moving on. Later I realized it would be better to allow users to move back and forth on steps 1–5 until the information is actually needed — step 6 where the first document is generated. If the user hasn't completed one or more previous steps, the error message provides details and takes them directly to the first step that has missing information. "
+      },
+      {
+        "title": "Generative AI Challenges",
+        "text": "The team was new to using AI, and there was much trial and error to get consistent results. For example, the sample documents we asked the AI to use as templates used incorrect markdown syntax at first. The documents were generated in markdown, then converted to HTML for editing by the user, and finally to Microsoft Word format for downloading. I helped to improve the AI prompts and the conversion processes – including recreating the required McMaster letterhead in HTML in a way that the Word converter could use."
+      },
+      {
+        "title": "Administration",
+        "text": "The app required an admin interface so that authorized members of the review board could add candidates and review the submitted documents. The system kept track of the status of each application as it moved through multiple review steps."
+      },
+      {
+        "title": "Candidate Profile",
+        "text": "In addition to generating three documents, the system allowed the review board to compile other needed documents, store them in one place, and download the final package."
       }
     ]
   }
