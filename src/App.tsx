@@ -14,7 +14,7 @@ function App() {
               Senior Product Designer
             </h2>
             <p className="text-lg tracking-wide uppercase mt-3 opacity-85 font-light text-center xl:text-left">
-              ux • design systems • front-end // kitchener-waterloo, on
+              UX • Design Systems • Front-End // Kitchener-Waterloo, ON
             </p>
           </div>
           <div className="mt-10 xl:mt-0 max-w-lg font-lora">
