@@ -1,6 +1,6 @@
 export default function ContactLinks() {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 items-center">
       <a
         href="https://www.linkedin.com/in/wesreimer"
         className="transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-120"
