@@ -8,16 +8,16 @@ function App() {
     <>
       <Header />
       <main className="container m-auto">
-        <div className="flex flex-col lg:flex-row gap-6 justify-between items-center my-24">
+        <div className="flex flex-col xl:flex-row gap-6 justify-between items-center my-24">
           <div>
-            <h2 className="text-5xl font-bold tracking-tight text-shadow-lg">
+            <h2 className="text-5xl font-bold tracking-tight text-shadow-lg text-center xl:text-left">
               Senior Product Designer
             </h2>
-            <p className="text-lg tracking-wide uppercase mt-3 opacity-85 font-light">
+            <p className="text-lg tracking-wide uppercase mt-3 opacity-85 font-light text-center xl:text-left">
               ux • design systems • front-end // kitchener-waterloo, on
             </p>
           </div>
-          <div className="lg:max-w-6/16 font-lora">
+          <div className="mt-10 xl:mt-0 max-w-lg font-lora">
             <blockquote className="italic text-lg">
               What sets Wes apart is how completely he owns his work: he is
               thoughtful and detail-oriented, consistently raising the quality
@@ -29,7 +29,7 @@ function App() {
             <p className="text-right">James Barr | CEO, Strata Research</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col xl:flex-row gap-6">
           {projects.map((project) => (
             <ProjectCard
               key={project.key}
@@ -45,7 +45,7 @@ function App() {
           ))}
         </div>
       </main>
-      <footer className="flex flex-col items-center gap-8 p-8 container m-auto">
+      <footer className="flex flex-col items-center gap-8 p-8 container m-auto text-center">
         <p className="font-extralight">More projects coming soon!</p>
         <a
           href="https://wes.reimer-reason.ca"

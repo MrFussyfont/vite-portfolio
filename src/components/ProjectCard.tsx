@@ -149,10 +149,10 @@ export default function ProjectCard({
           if (e.target === dialogRef.current) dialogRef.current.close();
         }}
       >
-        <div className="flex">
+        <div className="flex flex-col xl:flex-row">
           {slide.gifs ? (
             <figure
-              className={`${slide.bgColor || "bg-black"} flex w-2/3 aspect-422/319 items-center justify-between ${threeGifs ? "px-8" : "px-[6%]"}`}
+              className={`${slide.bgColor || "bg-black"} flex xl:w-2/3 aspect-422/319 items-center justify-between ${threeGifs ? "px-8" : "px-[6%]"}`}
               aria-describedby={`caption${slideIndex}`}
             >
               {slide.gifs.map((gif, i) => (
@@ -167,13 +167,13 @@ export default function ProjectCard({
           ) : (
             <img
               src={getAssetUrl(`${abbr}${slideIndex}.webp`)}
-              className="rounded-l-xl w-2/3 shrink-0 object-cover"
+              className="rounded-t-xl xl:rounded-l-xl xl:w-2/3 shrink-0 object-cover"
               alt={slideIndex === 0 ? alt : slide.title}
               // loading={slideIndex === 0 ? "eager" : "lazy"}
             />
           )}
 
-          <div className="project-description flex flex-col pb-4 xl:px-8 2xl:p-12 w-1/3">
+          <div className="project-description flex flex-col pb-4 xl:w-1/3 xl:px-8 2xl:p-12">
             <ProjectTable
               name={name}
               client={client}
@@ -204,7 +204,7 @@ export default function ProjectCard({
             )}
 
             {/* nav buttons */}
-            <div className="flex align-middle justify-between items-end grow">
+            <div className="flex align-middle justify-between items-end grow mt-4">
               <button
                 type="button"
                 title="Previous slide"
@@ -254,6 +254,7 @@ export default function ProjectCard({
             </div>
           </div>
         </div>
+
         <button
           className="absolute rounded-full top-3 right-3 opacity-80 hover:opacity-100 hover:bg-white transition-all cursor-pointer"
           title="Close"
