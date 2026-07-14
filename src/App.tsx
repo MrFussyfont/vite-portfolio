@@ -29,7 +29,7 @@ function App() {
             <p className="text-right">James Barr | CEO, Strata Research</p>
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row gap-6">
+        <div className="flex flex-col gap-y-6 gap-x-5 justify-center xl:flex-row xl:flex-wrap ">
           {projects.map((project) => (
             <ProjectCard
               key={project.key}
