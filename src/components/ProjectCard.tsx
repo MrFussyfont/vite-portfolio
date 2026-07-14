@@ -167,7 +167,7 @@ export default function ProjectCard({
           ) : (
             <img
               src={getAssetUrl(`${abbr}${slideIndex}.webp`)}
-              className="rounded-t-xl xl:rounded-l-xl xl:w-2/3 shrink-0 object-cover"
+              className="rounded-t-xl xl:rounded-tr-none xl:rounded-l-xl xl:w-2/3 shrink-0 object-cover"
               alt={slideIndex === 0 ? alt : slide.title}
               // loading={slideIndex === 0 ? "eager" : "lazy"}
             />
