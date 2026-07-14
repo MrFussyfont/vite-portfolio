@@ -82,7 +82,7 @@
       },
       {
         "title": "Localization",
-        "text": "Preparing the app for international markets presented new challenges. It had to work in 13 languages or dialects, and support configurable terminology and abbreviations, and allow variables in the middle of strings. I worked with translators and developers to ensure consistency, constantly tested on iOS and Android, and adjusted the design as needed to accommodate longer strings required by most European languages. Finnish and Greek were especially tricky!"
+        "text": "Preparing the app for international markets presented new challenges. It had to work in 13 languages or dialects, support configurable terminology and abbreviations, and allow variables in the middle of strings. I worked with translators and developers to ensure consistency, tested constantly on iOS and Android, and adjusted the design as needed to accommodate longer strings required by most European languages. Finnish and Greek were especially tricky!"
       },
       {
         "title": "Administration & Results",
