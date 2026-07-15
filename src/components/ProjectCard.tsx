@@ -99,9 +99,9 @@ export default function ProjectCard({
     const handleKeyUp = (event: KeyboardEvent) => {
       if (!dialogRef.current?.open) return;
       if (event.key === "ArrowLeft") {
-        prevStyle?.setProperty("fill", "none");
+        prevStyle?.setProperty("fill", "");
       } else if (event.key === "ArrowRight") {
-        nextStyle?.setProperty("fill", "none");
+        nextStyle?.setProperty("fill", "");
       }
     };
 
