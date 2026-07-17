@@ -59,7 +59,7 @@
       },
       {
         "title": "Challenges",
-        "text": "Designing for technicians in the field meant the app had to be very user-friendly and efficient, as they often work in high-pressure situations. The product owner had sketched out a rough workflow, but the concept was untested: an app that maps your steps while measuring WiFi signal as you walk from room to room. While the devs worked on a proof-of-concept, I iterated on the PM's wireframes in Miro, asking questions and doing more research, before moving on to high-fidelity mockups in Figma."
+        "text": "Designing for technicians in the field meant the app had to be very user-friendly and efficient, as they often work in high-pressure situations. The product owner had sketched out a rough workflow, but the concept was untested: an app that maps your steps while measuring WiFi signal as you walk from room to room. While the devs worked on a proof-of-concept, I iterated on the PM’s wireframes in Miro, asking questions and doing more research, before moving on to high-fidelity mockups in Figma."
       },
       {
         "title": "Steps",
@@ -76,7 +76,7 @@
       },
       {
         "title": "Apartment Units",
-        "text": "The biggest design challenge came in phase two of the project. The app relied on map data and the device compass to orient and locate the user inside the building. But what if the installation was in an apartment that didn't match the building footprint? I designed four versions of this feature and tested prototypes with people unfamiliar with the project. They were confused and unable to select the correct shape and orientation in early designs due to inadequate visual information. The second prototype here makes it easier to position the unit within the building.",
+        "text": "The biggest design challenge came in phase two of the project. The app relied on map data and the device compass to orient and locate the user inside the building. But what if the installation was in an apartment that didn’t match the building footprint? I designed four versions of this feature and tested prototypes with people unfamiliar with the project. They were confused and unable to select the correct shape and orientation in early designs due to inadequate visual information. The second prototype here makes it easier to position the unit within the building.",
         "gifs": ["rt-mdu1", "rt-mdu2"],
         "bgColor": "bg-[#7D8B87]"
       },
@@ -89,6 +89,73 @@
         "text": "The system required an admin interface to set up ISPs as tenants, and to analyze data from technicians to track quality of installations over time. I designed and contributed code to the initial version of this UI. <p>Certify remains a core product for RouteThis, credited by clients with providing an “efficient installation experience” for their techs, allowing better customer service and reducing service calls.",
         "link": "https://www.routethis.com/isps/certify",
         "linkText": "Certify product page"
+      }
+    ]
+  },
+  {
+    "key": "fl",
+    "name": "Festival Marketing Sites",
+    "client": "Farm League Brewing",
+    "role": "UX Design, Front-End Dev",
+    "stack": "Figma, React, Tailwind",
+    "timeline": "2024–2026",
+    "alt": "screenshots of music festival web sites",
+    "slides": [
+      {
+        "title": "Overview",
+        "text": "Farm League Brewing runs two music festivals in Ontario each year: Fest2Fall in Cambridge and Meadows in Fergus. Festivals need a solid online presence, with easy navigation, helpful content, and effective SEO to guide people to the right details. Strata worked with Farm League to build sites that reflect the scale of their events while improving discoverability and site management.",
+        "format": "jpg"
+      },
+      {
+        "title": "Challenges",
+        "text": "When Farm League launched their festivals in 2023, their designer used Wix to create single-page websites. The Fest2Fall site had the issues such as: 1. Large chunks of text were in images and thus inaccessible to screen-readers and search engine crawlers. 2. Decorative elements on the sides blocked the main content area at medium window sizes. The page was optimized for phones and for wide screens, but nothing in between. 3. More pages were needed for artist bios and the festival schedule. Separate pages would also improve search rankings for specific topics."
+      },
+      {
+        "title": "Redesigning Fest2Fall",
+        "text": "One page became six. I used motifs from the existing design throughout the site: the wavy line for separators and coloured bubbles for call-to-action buttons in the middle of the home page. To address text in images, I used web versions of the two main fonts where feasible. Some text was kept as images, but split into smaller SVG’s with the appropriate <title> text added for SEO and accessibility. This also allowed discrete links to be added – to the sponsors from the text chunks, and to the Artists page from the separate images.",
+        "link": "https://www.strataresearch.ca/insights/building-a-better-festival-site",
+        "linkText": "See my blog post for more details"
+      },
+      {
+        "title": "Annual Redesigns",
+        "text": "Fest2Fall 2024 was a great success, and soon it was time to plan for Meadows 2025. We used Fest2Fall as a template and made small improvements to both sites along with each year’s redesign. In the first year, Farm League asked us to delete all the content when the festival was over. I proposed that we keep most of the content up throughout the year, resulting in much better search results. I also adding structured event data (schema.org). These efforts helped to drive a 39% increase in page views, 20% more ticket sales, and 85K active users on Meadows in 2025.",
+        "link": "https://www.meadowsfest.ca/",
+        "linkText": "See the current Meadows site"
+      },
+      {
+        "title": "Freshly Baked Cookies",
+        "text": "As Fest2Fall 2025 approached, Farm League requested that we add Meta tracking to further their marketing efforts. Of course, this requires the user’s consent. Nobody likes these banners, so after some research and brainstorming, I proposed a different approach: 1. Don't show the banner until the user scrolls part way down the screen. 2. Frame the use of cookies in a way that is more likely to be accepted – promoting Canadian artists. 3. Clearly explain cookies on the Privacy Policy and allow the visitor to change their consent.",
+        "link": "https://www.fest2fall.com/",
+        "linkText": "See the current Fest2Fall site"
+      }
+    ]
+  },
+  {
+    "key": "ds",
+    "name": "Design System Automation",
+    "client": "Strata Research",
+    "role": "Research, Design, Dev",
+    "stack": "Figma, TypeScript",
+    "timeline": "2023",
+    "alt": "screenshot of design system",
+    "slides": [
+      {
+        "title": "Overview",
+        "text": "The Strata team embarked on an internal project to speed up UI development. We experimented with a standardized way of creating themeable components in Figma and automatically generating code using Figma’s API. (This was before AI tools had developed sufficiently for this type of thing.)"
+      },
+      {
+        "title": "Palette Generator",
+        "text": "My first contribution was to research the art and science of colour palette creation. I wanted our components to be themeable in a way that maintained consistent contrast (change colours with no change in contrast). Traditional colour models (RGB, HSL) are useless for this, so I experimented with formulae to calculate *perceived* lightness. I built a palette generator that takes a key colour in HSL and generates a shade or tint as close as possible to a target preceived lightness (95% and 25% in the examples shown).",
+        "link": "https://www.strataresearch.ca/insights/crafting-colour-palettes-for-ui-design",
+        "linkText": "See my blog post on colour"
+      },
+      {
+        "title": "Standardizing Components",
+        "text": "The next stage was to create the components in Figma in a consistent, scalable way. This would make code generation easier while allowing designers to build and customize. I researched design tokens and naming conventions and the team agreed on a system. I created the components and documentation while a developer worked on a way to generate code that minimized CSS conflicts and duplication across variants. "
+      },
+      {
+        "title": "Accessible & Optimized Code",
+        "text": "As an expert on semantic and accessible HTML, I provided code samples of each component for the developers to shoot for. Later, I worked directly on the TypeScript code to improve the output."
       }
     ]
   },
@@ -107,11 +174,11 @@
       },
       {
         "title": "Web App",
-        "text": "We built a web app that takes candidates through 8 steps to gather the information needed to generate the required documents. The information requested depends on the faculty type. Progress is saved automatically so that users can leave and return to the process as needed. <p>I worked on a small team with a product manager and one other developer. We chose the Shadcn library as a basis for the UI to avoid inventing a design system from scratch. I customized it in Figma based on McMaster's branding."
+        "text": "We built a web app that takes candidates through 8 steps to gather the information needed to generate the required documents. The information requested depends on the faculty type. Progress is saved automatically so that users can leave and return to the process as needed. <p>I worked on a small team with a product manager and one other developer. We chose the Shadcn library as a basis for the UI to avoid inventing a design system from scratch. I customized it in Figma based on McMaster’s branding."
       },
       {
         "title": "Steps",
-        "text": "I haven't included every step of the application, just some of the inital mock-ups. I enjoy creating clean and effective tables and forms — bad form UX is a pet peeve!"
+        "text": "I haven’t included every step of the application, just some of the inital mock-ups. I enjoy creating clean and effective tables and forms — bad form UX is a pet peeve!"
       },
       {
         "title": "Career Highlights",
@@ -119,7 +186,7 @@
       },
       {
         "title": "Error Correction",
-        "text": "The first version required users to complete each step before moving on. Later I realized it would be better to allow users to move back and forth on steps 1–5 until the information is actually needed — step 6 where the first document is generated. If the user hasn't completed one or more previous steps, the error message provides details and takes them directly to the first step that has missing information. "
+        "text": "The first version required users to complete each step before moving on. Later I realized it would be better to allow users to move back and forth on steps 1–5 until the information is actually needed — step 6 where the first document is generated. If the user hasn’t completed one or more previous steps, the error message provides details and takes them directly to the first step that has missing information. "
       },
       {
         "title": "Generative AI Challenges",
