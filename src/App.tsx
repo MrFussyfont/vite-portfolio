@@ -17,7 +17,7 @@ function App() {
               UX • Design Systems • Front-End // Kitchener-Waterloo, ON
             </p>
           </div>
-          <div className="mt-10 xl:mt-0 max-w-lg font-lora">
+          <div className="mt-10 xl:mt-0 max-w-lg font-lora animate-[fadeIn_2s]">
             <blockquote className="italic sm:text-lg">
               What sets Wes apart is how completely he owns his work: he is
               thoughtful and detail-oriented, consistently raising the quality
@@ -29,7 +29,7 @@ function App() {
             <p className="text-right">James Barr | CEO, Strata Research</p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-6 gap-x-5 justify-center xl:flex-row xl:flex-wrap ">
+        <div className="flex flex-col gap-y-6 gap-x-5 justify-center lg:flex-row lg:flex-wrap">
           {projects.map((project) => (
             <ProjectCard
               key={project.key}
@@ -45,15 +45,14 @@ function App() {
           ))}
         </div>
       </main>
-      <footer className="flex flex-col items-center gap-8 p-8 container m-auto text-center">
-        <p className="font-extralight">More projects coming soon!</p>
+      <footer className="flex flex-col items-center gap-8 pt-16 container m-auto text-center font-light">
         <a
           href="https://wes.reimer-reason.ca"
           target="_blank"
           rel="noreferrer"
           className="underline underline-offset-2 hover:bg-white hover:text-yellow-900 transition-colors"
         >
-          See some of my previous design work and case studies
+          Older design work and case studies
         </a>
         <ContactLinks />
       </footer>
