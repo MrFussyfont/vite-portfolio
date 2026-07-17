@@ -28,8 +28,8 @@ function processText(text: string): React.ReactElement {
     );
   }
 
-  // check for a numbered list (RT slide)
-  const items = text.split(/\s\d+\.\s/);
+  // check for a numbered list
+  const items = text.split(/\s\d\.\s/);
   if (items.length > 1) {
     return (
       <>
@@ -42,6 +42,7 @@ function processText(text: string): React.ReactElement {
       </>
     );
   }
+
   return <p>{text}</p>;
 }
 
@@ -60,6 +61,7 @@ interface ProjectCardProps {
     linkText?: string;
     gifs?: string[];
     bgColor?: string;
+    format?: string;
   }[];
 }
 
@@ -115,7 +117,7 @@ export default function ProjectCard({
   }, [slideIndex, slides.length]);
 
   const slide = slides[slideIndex];
-
+  const ext = slide.format || "webp";
   const threeGifs = slide.gifs && slide.gifs.length > 2;
 
   return (
@@ -126,7 +128,7 @@ export default function ProjectCard({
         onClick={() => dialogRef.current?.showModal()}
       >
         <img
-          src={getAssetUrl(`${abbr}0.webp`)}
+          src={getAssetUrl(`${abbr}0.${slides[0].format || "webp"}`)}
           className="rounded-t-xl"
           alt={alt}
         />
@@ -166,10 +168,9 @@ export default function ProjectCard({
             </figure>
           ) : (
             <img
-              src={getAssetUrl(`${abbr}${slideIndex}.webp`)}
+              src={getAssetUrl(`${abbr}${slideIndex}.${ext}`)}
               className="rounded-t-xl xl:rounded-tr-none xl:rounded-l-xl xl:w-2/3 shrink-0 object-cover"
               alt={slideIndex === 0 ? alt : slide.title}
-              // loading={slideIndex === 0 ? "eager" : "lazy"}
             />
           )}
 
@@ -197,6 +198,7 @@ export default function ProjectCard({
                   target="_blank"
                   rel="noreferrer"
                   className="underline underline-offset-2 hover:bg-white hover:text-yellow-900 transition-colors"
+                  title="Opens in a new tab"
                 >
                   {slide.linkText}
                 </a>
@@ -209,7 +211,7 @@ export default function ProjectCard({
                 type="button"
                 title="Previous slide"
                 disabled={slideIndex === 0}
-                className="prev cursor-pointer *:hover:fill-white disabled:pointer-events-none disabled:opacity-50"
+                className="prev"
                 onClick={() => setSlideIndex((i) => i - 1)}
               >
                 <svg
@@ -234,7 +236,7 @@ export default function ProjectCard({
                 type="button"
                 title="Next slide"
                 disabled={slideIndex === slides.length - 1}
-                className="next cursor-pointer *:hover:fill-white disabled:pointer-events-none disabled:opacity-50"
+                className="next"
                 onClick={() => setSlideIndex((i) => i + 1)}
               >
                 <svg

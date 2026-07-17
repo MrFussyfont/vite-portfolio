@@ -32,15 +32,15 @@ body {
     opacity: 1;
   }
 }
-/* transition-opacity transition-margin duration-300 */
+/* transition-opacity transition-margin duration-300 2xl:w-[23%] xl:h-156 */
 @layer components {
   body {
-    @apply bg-[#866f68] bg-[url('assets/bg.webp')] bg-blend-overlay bg-center bg-cover text-white pt-6 px-4 md:px-12;
+    @apply bg-[#866f68] bg-[url('assets/bg.webp')] bg-cover bg-center bg-blend-overlay text-white pt-6 px-4 md:px-12 min-h-480;
   }
 
   .project-card {
-    @apply flex flex-col rounded-xl xl:w-[32%] xl:max-h-156 border-white border text-left mt-40 opacity-0 cursor-pointer outline-0 focus:outline-4 transition-[outline] hover:outline-4 outline-white;
-    animation: slideUp 1s ease-out forwards;
+    @apply flex flex-col rounded-xl lg:w-[48%] xl:w-[32%] border-white border text-left opacity-0 cursor-pointer outline-0 focus:outline-4 transition-[outline] hover:outline-4 outline-white;
+    animation: fadeIn 1s ease-out forwards;
     /* max-height: 39rem; */
   }
 
@@ -49,6 +49,12 @@ body {
   }
   .project-card:nth-of-type(3) {
     animation-delay: 1s;
+  }
+  .project-card:nth-of-type(4) {
+    animation-delay: 1.5s;
+  }
+  .project-card:nth-of-type(5) {
+    animation-delay: 2s;
   }
 
   .project-card,
@@ -87,5 +93,10 @@ body {
 
   dialog .project-description table {
     @apply hidden xl:table;
+  }
+
+  .prev,
+  .next {
+    @apply cursor-pointer *:hover:fill-white disabled:pointer-events-none disabled:opacity-50;
   }
 }
