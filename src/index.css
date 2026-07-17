@@ -13,14 +13,9 @@ body {
   animation: fadeIn 0.3s;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    margin-top: 10rem;
-  }
+@keyframes reveal {
   to {
-    opacity: 1;
-    margin-top: 0;
+    clip-path: inset(0 0 0 0);
   }
 }
 
@@ -32,26 +27,39 @@ body {
     opacity: 1;
   }
 }
-/* transition-opacity transition-margin duration-300 2xl:w-[23%] xl:h-156 */
+
 @layer components {
   body {
     @apply bg-[#866f68] bg-[url('assets/bg.webp')] bg-cover bg-center bg-blend-overlay text-white pt-6 px-4 md:px-12 min-h-480;
   }
 
+  .reveal-right {
+    clip-path: inset(0 100% 0 0);
+    animation: reveal 0.5s ease-out forwards;
+  }
+  p.reveal-right {
+    animation-delay: 0.5s;
+  }
+
+  .reveal-down {
+    clip-path: inset(0 0 100% 0);
+    animation: reveal 0.7s 1s ease-out forwards;
+  }
+
   .project-card {
     @apply flex flex-col rounded-xl lg:w-[48%] xl:w-[32%] border-white border text-left opacity-0 cursor-pointer outline-0 focus:outline-4 transition-[outline] hover:outline-4 outline-white;
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeIn 1s 2s ease-out forwards;
     /* max-height: 39rem; */
   }
 
   .project-card:nth-of-type(2) {
-    animation-delay: 0.5s;
+    animation-delay: 2.5s;
   }
   .project-card:nth-of-type(3) {
-    animation-delay: 1s;
+    animation-delay: 3s;
   }
   .project-card:nth-of-type(4) {
-    animation-delay: 1.5s;
+    animation-delay: 4s;
   }
   .project-card:nth-of-type(5) {
     animation-delay: 2s;

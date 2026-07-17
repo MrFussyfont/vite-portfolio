@@ -10,14 +10,14 @@ function App() {
       <main className="container m-auto">
         <div className="flex flex-col xl:flex-row gap-6 justify-between items-center my-24">
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-shadow-lg text-center xl:text-left">
+            <h2 className="reveal-right text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-shadow-lg text-center xl:text-left leading-tight">
               Senior Product Designer
             </h2>
-            <p className="sm:text-lg tracking-wide uppercase mt-3 opacity-85 font-light text-center xl:text-left">
+            <p className="reveal-right sm:text-lg tracking-wide uppercase mt-1 opacity-85 font-light text-center xl:text-left">
               UX • Design Systems • Front-End // Kitchener-Waterloo, ON
             </p>
           </div>
-          <div className="mt-10 xl:mt-0 max-w-lg font-lora animate-[fadeIn_2s]">
+          <div className="reveal-down mt-10 xl:mt-0 max-w-lg 2xl:max-w-xl font-lora">
             <blockquote className="italic sm:text-lg">
               What sets Wes apart is how completely he owns his work: he is
               thoughtful and detail-oriented, consistently raising the quality
