@@ -35,7 +35,7 @@ body {
 
   .reveal-right {
     clip-path: inset(0 100% 0 0);
-    animation: reveal 0.5s ease-out forwards;
+    animation: reveal 0.7s ease-out forwards;
   }
   p.reveal-right {
     animation-delay: 0.5s;
@@ -59,10 +59,10 @@ body {
     animation-delay: 3s;
   }
   .project-card:nth-of-type(4) {
-    animation-delay: 4s;
+    animation-delay: 3.5s;
   }
   .project-card:nth-of-type(5) {
-    animation-delay: 2s;
+    animation-delay: 4s;
   }
 
   .project-card,
